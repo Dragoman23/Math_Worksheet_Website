@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THE MATH WEBSITE</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; line-height:1.6; }
+        .box { border: 1px solid #ccc; padding: 20px; border-radius: 8px; background: #f9f9f9; }
+        button { background: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor:pointer; }
+        input { padding: 8px; width: 100%; margin-bottom: 10px; box-sizing: border-box; }
+        .hidden{ display: none; }
+    </style>
+    <link rel="stylesheet" href="https://pyscript.net"/>
+    <script type="module" src="https://pyscript.net"></script>
+</head>
+<body>
+    <h2>Math Practice with Multiple Options</h2>
+    <div id="setup-view" class="box">
+        <label>Enter your name: </label>
+        <input type="text" id="username" placeholder="Your name...">
+        <button id="start-btn" py-click="start_quiz">Start Quiz</button>
+    </div>
+
+    <div id="quiz-view" class="box hidden">
+        <h3 id="question-title">Question 1</h3>
+        <p id="question-text" style="font-size: 1.5em; font-weight: bold;"></p>
+        <input type="number" id="user-answer" placeholder="Your answer...">
+        <button id="submit-btn" py-click="check_answer">Submit Answer</button>
+        <p id="feedback"></p>
+    </div>
+
+    <script type="py">
+        
+    </script>
+</body>
+</html>
